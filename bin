@@ -1,0 +1,18 @@
+#!/bin/bash
+cd main
+mkdir images   
+cd images
+mkdir sm md lg
+cd ../
+cp  xl/* images/sm
+cp  xl/* images/md
+cp  xl/* images/lg
+
+######
+files=images/sm/*
+find $files -name '*-lg*' -exec bash -c 'mv $0 ${0/lg/sm}' {} \;
+
+for file in $files
+do
+	./3Drotate roll=30 tilt=55 bgcolor=none auto=out $file $file
+done

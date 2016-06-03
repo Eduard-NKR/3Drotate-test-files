@@ -1,0 +1,2 @@
+./3Drotate roll=30 tilt=55 bgcolor=none auto=out 002-0061-1-lg.png example.png  (img2)
+./3Drotate tilt=60 bgcolor=none auto=out 002-0061-1-lg.png example.png  (img3)
